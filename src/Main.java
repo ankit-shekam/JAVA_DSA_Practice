@@ -1,8 +1,7 @@
 import Array.*;
-import BinarySearch.*;
-import Stack.*;
 public class Main {
   public static void main(String[] args) {
-    System.out.println("Main for the DSA Repo");
+    int[] nums = new int[]{ 2, 3, 4, 5, 1};
+    System.out.println(ContainsDuplicate.containsDuplicate(nums));
   }
 }
