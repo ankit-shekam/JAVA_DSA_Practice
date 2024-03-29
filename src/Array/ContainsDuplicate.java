@@ -9,14 +9,16 @@
 //        -10^(9) <= nums[i] <= 10^(9)
 package Array;
 
+
 import java.util.*;
 import java.lang.*;
+import org.jetbrains.annotations.NotNull;
 
 public class ContainsDuplicate {
-  public static boolean containsDuplicate(int[] nums){
-    Set<Integer> hset = new HashSet<>();
+  public static boolean containsDuplicate(int @NotNull [] nums){
+    Set<Integer> hset = new HashSet<>(); //sets dont allow duplicates
     for(int num:nums){
-      if(!hset.add(num)) return true;
+      if(!hset.add(num)) return true; //tried to insert duplicate element into the set
     }
     return false;
   }
