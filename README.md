@@ -1,6 +1,6 @@
 # DSA problems solved so far
 1. [Array](src/Array/Array_Questions.md)
-2. Two Pointer
+2. [Two Pointer](src/TwoPointer/TwoPointer_Questions.md)
 3. [Stack](src/Stack/Stack_Questions.md)
 4. [Binary Search](src/BinarySearch/BinarySearch_Questions.md)
 5. Sliding Window
