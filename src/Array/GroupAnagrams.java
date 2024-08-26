@@ -29,6 +29,7 @@ public class GroupAnagrams {
           map.put(sortedWord, new ArrayList<>());
         }
         map.get(sortedWord).add(word);
+        //comment added from github web portal in andoird tablet  
       }
 
       return new ArrayList<>(map.values());

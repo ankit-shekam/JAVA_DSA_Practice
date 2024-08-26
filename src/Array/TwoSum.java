@@ -19,7 +19,7 @@ public class TwoSum {
  * Input: nums = [3,3], target = 6
  * Output: [0,1]
  * Constraints:
- * 2 <= nums.length <= 104
+ * 2 <= nums.length <= 10^4
  */
   public int[] twoSum(@NotNull int[] nums,@NotNull int target) {
     Map<Integer, Integer> map = new HashMap<>();
