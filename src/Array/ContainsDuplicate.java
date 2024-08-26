@@ -16,13 +16,13 @@ public class ContainsDuplicate {
  * //-10^(9) <= nums[i] <= 10^(9)
  */
   public static boolean containsDuplicate(int @NotNull [] nums){
-    // sort - Space & time = O(NlogN)
-    // use hashset - space & Time = O(N)
-    // Till 10^6 -> O(NlogN) is OK
     Set<Integer> hset = new HashSet<>();
     for(int num : nums){
       if(!hset.add(num)) return true; //tried inserting duplicate in the set
     }
     return false; //no duplicates
   }
+  // sort - Space & time = O(NlogN)
+  // use hashset - space & Time = O(N)
+  // Till 10^6 -> O(NlogN) is OK
 }

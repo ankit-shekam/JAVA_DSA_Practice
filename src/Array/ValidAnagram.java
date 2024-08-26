@@ -1,6 +1,5 @@
 package Array;
 
-import java.util.*;
 import java.lang.*;
 import org.jetbrains.annotations.NotNull;
 public class ValidAnagram {
@@ -15,21 +14,19 @@ public class ValidAnagram {
  * s and t consist of lowercase English letters.
  */
   public static boolean isAnagram(@NotNull String s, @NotNull String t) {
-    // sort both and incremental compare - time & space = O(NlogN)
-    // use HashMap - time and space = O(N)
-    // use freqArray since only small eng letters - space ~ O(1), time O(N)
     int[] freqArr = new int[26];
     for(int i=0; i<s.length(); i++){
-      char val = s.charAt(i);
-      freqArr[val-'a']++;
+      freqArr[s.charAt(i) - 'a']++;
     }
     for(int i=0; i<t.length(); i++){
-      char val = t.charAt(i);
-      freqArr[val-'a']--;
+      freqArr[t.charAt(i) - 'a']--;
     }
     for(int num : freqArr){
       if(num!=0) return false;
     }
     return true;
   }
+  // sort both and incremental compare - time & space = O(NlogN)
+  // use HashMap - time and space = O(N)
+  // use freqArray since only small eng letters - space ~ O(1), time O(N)
 }
